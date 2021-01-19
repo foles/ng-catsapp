@@ -3,10 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { BuscadorFelinoComponent } from './components/buscador-felino/buscador-felino.component';
+import { HomeComponent } from './components/home/home.component';
+import { FotosFelinasComponent } from './components/fotos-felinas/fotos-felinas.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    BuscadorFelinoComponent,
+    HomeComponent,
+    FotosFelinasComponent
   ],
   imports: [
     BrowserModule,
