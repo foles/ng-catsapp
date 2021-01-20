@@ -14,4 +14,9 @@ export class CatsService {
   getAllCats() {
     return this.http.get<any[]>('https://api.thecatapi.com/v1/breeds');
   }
+
+  get18pictures() {
+    return this.http.get<any[]>('https://api.thecatapi.com/v1/images/search?limit=18&mime_types=&order=Random&size=small&page=0&category_ids=1&sub_id=demo-b7e1c3');
+
+  }
 }

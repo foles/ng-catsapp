@@ -9,9 +9,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BuscadorFelinoComponent } from './components/buscador-felino/buscador-felino.component';
-import { HomeComponent } from './components/home/home.component';
 import { FotosFelinasComponent } from './components/fotos-felinas/fotos-felinas.component';
-import { CatsService } from './services/cats.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +17,6 @@ import { CatsService } from './services/cats.service';
     HeaderComponent,
     FooterComponent,
     BuscadorFelinoComponent,
-    HomeComponent,
     FotosFelinasComponent,
 
   ],

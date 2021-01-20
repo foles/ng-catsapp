@@ -1,1 +1,19 @@
-<p>fotos-felinas works!</p>
+<div class="fotos-felinas">
+    <h2>
+        18 Fotos Felinas
+    </h2>
+
+    <picture>
+        <p>#{{index+1}}</p>
+        <img *ngIf="cats.length" src="{{cats[index].url}}">
+    </picture>
+    <div class="buttons">
+        <img src="assets/primero.jpg" alt="Primero" (click)="primero()">
+        <img src="assets/anterior.jpg" alt="Anterior" (click)="anterior()">
+        <img src="assets/siguiente.jpg" alt="Siguiente" (click)="siguiente()">
+        <img src="assets/ultimo.jpg" alt="Ultimo" (click)="ultimo()">
+    </div>
+    <button (click)="get18Cats()">
+        Nuevas Fotos
+    </button>
+</div>

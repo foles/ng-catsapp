@@ -1,0 +1,19 @@
+footer {
+    height: 15vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-weight: bold;
+    background: rgb(170, 168, 168);
+    background: linear-gradient(0deg, rgba(170, 168, 168, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    padding-bottom: 8px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+footer p {
+    color: var(--primary);
+}

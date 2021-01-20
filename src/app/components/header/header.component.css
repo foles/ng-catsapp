@@ -1,7 +1,7 @@
 nav {
     position: relative;
     display: flex;
-    height: 80px;
+    height: 15vh;
     width: 100%;
     padding: 1% 5%;
     background: rgb(170, 168, 168);
@@ -68,7 +68,7 @@ nav .icon-burger .line {
         position: fixed;
         left: 0;
         right: 0;
-        top: 80px;
+        top: 15vh;
         bottom: 100%;
         flex-direction: column;
         justify-content: space-evenly;
@@ -81,7 +81,7 @@ nav .icon-burger .line {
         font-size: 20px;
     }
     nav :checked~.links {
-        bottom: 0;
+        bottom: 60%;
     }
     nav .icon-burger {
         display: block;

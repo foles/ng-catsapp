@@ -1,6 +1,7 @@
 .buscador-felino {
     display: flex;
     width: 100%;
+    min-height: 70vh;
     flex-direction: column;
     justify-content: center;
     padding: 2% 5%;
@@ -20,20 +21,24 @@
 
 .buscador-felino__card__data,
 .buscador-felino__card__picture {
-    width: 50%;
     align-self: center;
     text-align: center;
 }
 
 .buscador-felino__card__data {
+    width: 70%;
     border: 2px solid var(--primary);
     border-radius: 20px;
     padding: 5px;
     padding: 15px;
 }
 
+.buscador-felino__card__picture {
+    width: 30%;
+}
+
 .buscador-felino__card__picture img {
-    width: 80%;
+    width: 95%;
     object-fit: cover;
     border-radius: 25px;
 }
@@ -45,16 +50,20 @@
 .card__select option,
 .card__select select {
     font-size: 1.1rem;
-    background-color: #7ee1ff;
 }
 
 .card__select select {
     width: 80%;
+    max-width: 300px;
 }
 
 .card__info {
     margin: 20px 0;
     word-wrap: break-word;
+}
+
+.card__info p {
+    margin-top: 5px;
 }
 
 .card__info__title {
