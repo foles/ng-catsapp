@@ -1,1 +1,49 @@
-<p>buscador-felino works!</p>
+<div class="buscador-felino">
+    <h2>
+        El Buscador Felino
+    </h2>
+
+    <div class="buscador-felino__card">
+        <div class="buscador-felino__card__data">
+
+            <div class="card__select">
+                <label for="catsSelect">Raza de Gato: </label>
+                <select name="catsSelect" id="catsSelect" [(ngModel)]="selectedCat" (change)="selected()">
+                  <option *ngFor="let cat of cats" 
+                  [ngValue]="cat">{{cat.name}}
+                </option>         
+                </select>
+            </div>
+
+
+            <div *ngIf="selectedCat!=undefined" class="card__info">
+                <p><b>Id: </b>{{selectedCat.id}}</p>
+                <p><b>Nombre: </b>{{selectedCat.name}}</p>
+                <p><b>Descripcipon: </b>{{selectedCat.description}}</p>
+                <p><b>Años de Vida: </b>{{selectedCat.life_span}}</p>
+                <p><b>Origen: </b>{{selectedCat.origin}}</p>
+                <p><b>Wiki: </b><a [href]="selectedCat.wikipedia_url" class="text">{{selectedCat.wikipedia_url}}</a></p>
+                <p><b>VetStreet: </b><a [href]="selectedCat.vetstreet_url">{{selectedCat.vetstreet_url}}</a> </p>
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+        <div *ngIf="selectedCat!=undefined" class="buscador-felino__card__picture">
+            <picture>
+                <img [src]="selectedCat.image.url" alt="">
+
+            </picture>
+        </div>
+
+        <div *ngIf="selectedCat==undefined" class="buscador-felino__card__picture">
+            <img src="https://img.huffingtonpost.com/asset/5d3e321a2400009d17936c2b.jpeg?ops=scalefit_720_noupscale" alt="">
+        </div>
+
+    </div>
+</div>

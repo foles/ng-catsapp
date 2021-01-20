@@ -1,0 +1,74 @@
+.buscador-felino {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2% 5%;
+}
+
+.buscador-felino h2 {
+    color: var(--primary);
+    align-self: center;
+}
+
+.buscador-felino__card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 2% 0;
+}
+
+.buscador-felino__card__data,
+.buscador-felino__card__picture {
+    width: 50%;
+    align-self: center;
+    text-align: center;
+}
+
+.buscador-felino__card__data {
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    padding: 5px;
+    padding: 15px;
+}
+
+.buscador-felino__card__picture img {
+    width: 80%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.card__select label {
+    font-size: 1.2rem;
+}
+
+.card__select option,
+.card__select select {
+    font-size: 1.1rem;
+    background-color: #7ee1ff;
+}
+
+.card__select select {
+    width: 80%;
+}
+
+.card__info {
+    margin: 20px 0;
+    word-wrap: break-word;
+}
+
+.card__info__title {
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin: 12px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .buscador-felino__card__picture {
+        width: 100%;
+    }
+    .buscador-felino__card__data {
+        width: 100%;
+        border: none;
+    }
+}
